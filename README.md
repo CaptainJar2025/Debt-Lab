@@ -2,12 +2,6 @@
 
 A local desktop calculator for comparing debt payoff, emergency savings and hypothetical investment scenarios. **Planning estimates only.** It is not financial, investment, tax or legal advice, a lender statement, a quote, a guarantee or an investment forecast. Read [Read before use](READ-BEFORE-USE.md) and [Model guide](ASSUMPTIONS.md).
 
-## Open the Mac beta
-
-Unzip the public-beta download and double-click **Debt Lab.app**. The app bundles Python and Qt; users do not need Python installed. This build targets Apple Silicon Macs, macOS 14 or newer. It has been tested locally, is locally signed, and is **not Apple-notarized**. No Windows executable or Intel Mac build is included.
-
-The public build starts with an empty loan list and zero household inputs. It contains no personal scenario. **Load fictional example** is an optional illustration with clearly labeled sample loans. The empty-start investment settings use 7% before and after payoff as editable illustrations, not predictions. Existing scenarios retain their saved return assumptions.
-
 ## Start with only what you want to model
 
 1. **Loans:** Add loan. Choose its type from a dropdown; enter principal, unpaid interest, current effective APR, regular payment and next required date. Use the calendar for dates. Unknown remaining term is 0. Click a column heading for its explanation.
