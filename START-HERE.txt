@@ -1,0 +1,22 @@
+DEBT LAB 0.8.0 - WINDOWS x64
+
+IF YOU HAVE THE FINISHED APP ZIP
+Extract the entire ZIP. Open the Debt Lab folder and double-click Debt Lab.exe.
+Keep _internal and all companion files beside the executable. Do not run it from inside the ZIP.
+Python is bundled; app users do not need Python installed.
+Starts with empty loans and zero personal budget inputs. Open your saved scenario ZIP manually.
+This beta executable is unsigned. Local checks are not independent Windows-device certification.
+
+IF YOU HAVE THE WINDOWS BUILD KIT
+This kit is source code and a builder, not a prebuilt Windows executable.
+Extract it to a normal folder on a Windows 10/11 x64 computer with internet access.
+Double-click Build-Windows.cmd. It needs 64-bit Python 3.12 to build.
+If Python is missing, the builder offers to install it through Windows Package Manager;
+you can decline and install Python 3.12 yourself from python.org.
+The builder downloads pinned dependencies, refreshes license notices, runs tests,
+builds the app and verifies the executable before packaging it.
+On success, the distributable ZIP appears in release\Debt-Lab-v0.8.0-Windows-x64.zip.
+Give people that finished ZIP, not this build kit. No administrator launch is required.
+If the build fails, keep the error text; no successful Windows build should be claimed.
+
+Planning estimates only. Read READ-BEFORE-USE.md. Keep saved financial scenarios private.
