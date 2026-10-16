@@ -94,9 +94,3 @@ Only Minimum, Avalanche and Snowball are shown. Main summaries and experiments u
 - Click payoff flags to jump to the exact final-payment row.
 
 These tools appear in the continuously scrolling Results page and exported detailed report. Scenario comparison is also available before running a current plan.
-
-## Build the Windows portable app
-
-The Windows build kit contains source and a builder, not a prebuilt executable. Extract it on a Windows 10/11 x64 computer and double-click **Build-Windows.cmd**. The builder needs 64-bit Python 3.12; if missing, it offers a user-account installation through Windows Package Manager. It downloads pinned dependencies, refreshes license notices, runs the tests, builds natively, checks the actual executable and writes `release/Debt-Lab-v0.8.0-Windows-x64.zip`.
-
-Recipients extract that finished ZIP and open `Debt Lab/Debt Lab.exe`. Keep its companion files together. App users do not need Python. The executable is unsigned, and building it has not been verified on Windows from this Mac. See WINDOWS-START-HERE.txt.
