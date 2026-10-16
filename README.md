@@ -24,37 +24,6 @@ There is no autosave. The app marks unsaved edits and asks before discarding the
 
 Amounts and dates are conditional on the chosen inputs and horizon. Test against statements before acting.
 
-## Source development
-
-Requires Python 3.10 or newer and a graphical desktop:
-
-```sh
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m debt_app
-```
-
-Windows: use `py -m venv .venv` and `.venv\Scripts\activate` for the first two steps. Source portability is not a claim that a Windows binary was tested.
-
-```sh
-python -m unittest discover -s tests -v
-```
-
-The engine tests verify important identities and edge cases; UI tests also need PySide6 and use its offscreen platform. Tests do not certify agreement with every contract. Source: `debt_app/engine.py` for simulation; `app.py` and `ui_fields.py` for controls; `report.py` for reporting; `scenario.py` for ZIP/CSV persistence.
-
-## Build and distribution status
-
-Install PyInstaller in the local environment, collect upstream license notices with `packaging/collect_notices.py` (network required), then build:
-
-```sh
-python -m pip install 'pyinstaller>=6.11,<7'
-python packaging/collect_notices.py
-PYINSTALLER_CONFIG_DIR="$PWD/build/pyinstaller-cache" python -m PyInstaller --noconfirm packaging/DebtLab.spec
-```
-
-Output on macOS: `dist/Debt Lab.app`. Its `--smoke-test` argument loads the fictional example and verifies packaged startup. Build each operating system on that operating system and test separately.
-
 This is a **reviewable public-beta candidate**, not an uploaded production release. [Release readiness](PUBLIC-RELEASE.md) records remaining publisher work, including distribution terms/license review and Developer ID signing/notarization. [Third-party notices](THIRD-PARTY-NOTICES.md) accompany the runtime. No synced project reference files were modified.
 
 ## License and origins
